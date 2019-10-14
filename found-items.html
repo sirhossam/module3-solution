@@ -1,7 +1,7 @@
 <div style="display: inline-block;" class="loader" ng-if="loader"></div>
 <ul>
   <li ng-repeat="item in foundItems">
-    <span style="font-weight: bolder;">{{ item.name }} , {{item.short_name}} , </span> {{item.description}}
+    <span style="font-weight: bolder;">{{ item.name }} ,{{item.short_name}} ,</span> {{item.description}}
     <button ng-click="onRemove({index:$index})">Don't want this one !</button>
   </li>
   <li class="alert alert-danger" ng-if="server">can't connect to server</li>
